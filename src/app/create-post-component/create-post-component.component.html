@@ -1,1 +1,32 @@
-<P>Este apartado seria para crear un nuevo post!</P>
+<!-- <P>{{ content }}</P>
+<textarea [(ngModel)]="texto"></textarea>
+<button mat-raised-button color="primary"(click)="showText()">Guardar</button> -->
+
+<form (submit)="createPost(postForm)" #postForm="ngForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input type="text" matInput ngModel tittle="ngModel" name="title" required/>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>sumary</mat-label>
+    <input type="text" matInput ngModel sumary="ngModel" name="sumary"/>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Content</mat-label>
+    <textarea matInput ngModel content="ngModel" name="content" required></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Guardar</button>
+</form>
+
+<!-- <p *ngIf="posts.length === 0">No se han agregadio posts</p>
+
+<mat-card *ngFor="let item of posts">
+  <mat-card-title>{{item.title}}</mat-card-title>
+  <mat-card-subtitle>{{item.sumary}}</mat-card-subtitle>
+  <mat-card-content>
+    <p>{{item.content}}</p>
+  </mat-card-content>
+</mat-card> -->

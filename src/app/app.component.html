@@ -1,3 +1,5 @@
 <main>
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
+  <app-create-post-component (addPost)="savePost($event)"></app-create-post-component>
+  <app-post-list [posts]="storedPosts"></app-post-list>
 </main>
