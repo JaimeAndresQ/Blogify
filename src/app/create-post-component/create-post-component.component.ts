@@ -23,7 +23,7 @@ export class CreatePostComponentComponent implements OnInit {
   createPost(form: NgForm){
     if(form.valid){
       this.addPost.emit(form.value);
-      form.resetForm;
+      form.resetForm();
     }
 
   }
