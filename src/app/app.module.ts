@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 //Componentes del aplicativo
 import { AppRoutingModule } from './app-routing.module';
@@ -14,12 +14,14 @@ import { CreatePostComponentComponent } from './create-post-component/create-pos
 import{MatButtonModule} from '@angular/material/button';
 import{MatInputModule} from '@angular/material/input';
 import { PostListComponent } from './post-list/post-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatePostComponentComponent,
-    PostListComponent
+    PostListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { PostListComponent } from './post-list/post-list.component';
     MatButtonModule,
     MatInputModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

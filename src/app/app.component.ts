@@ -7,11 +7,5 @@ import { Post } from './create-post-component/Models/post.models';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  storedPosts: Post[] = [];
-
   title = 'blogify';
-
-  savePost(post: Post){
-    this.storedPosts.push(post);
-  }
 }
