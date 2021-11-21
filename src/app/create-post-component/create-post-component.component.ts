@@ -11,6 +11,7 @@ import { Post } from './Models/post.models';
 export class CreatePostComponentComponent implements OnInit {
   content: string = 'Hola a todos';
   texto: string = '';
+  errorMessage: string = 'Este campo es requerido';
 
   constructor(public postService: PostService) { }
 
@@ -25,6 +26,9 @@ export class CreatePostComponentComponent implements OnInit {
       this.postService.addPost(form.value);
       form.resetForm();
     }
+  }
 
+  getErrorMessage(){
+    return this.errorMessage;
   }
 }

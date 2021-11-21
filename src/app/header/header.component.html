@@ -1,3 +1,12 @@
 <mat-toolbar color = "primary">
-  <span>Blogyfy</span>
+  <span>
+    <a routerLink="/">Blogyfy</a>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+    <li>
+      <a mat-button routerLink="/create" routerLinkActive="mat-accent">Agregar</a>
+      <a mat-button routerLink="/login" routerLinkActive="mat-accent">Login</a>
+    </li>
+  </ul>
 </mat-toolbar>

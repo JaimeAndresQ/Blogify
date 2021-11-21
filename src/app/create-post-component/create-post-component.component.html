@@ -6,6 +6,7 @@
   <mat-form-field appearance="fill">
     <mat-label>Title</mat-label>
     <input type="text" matInput ngModel tittle="ngModel" name="title" required/>
+    <mat-error>{{getErrorMessage()}}</mat-error>
   </mat-form-field>
 
   <mat-form-field appearance="fill">
@@ -16,6 +17,7 @@
   <mat-form-field appearance="fill">
     <mat-label>Content</mat-label>
     <textarea matInput ngModel content="ngModel" name="content" required></textarea>
+    <mat-error>{{getErrorMessage()}}</mat-error>
   </mat-form-field>
 
   <button mat-raised-button color="primary">Guardar</button>
